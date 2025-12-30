@@ -24,4 +24,3 @@ Portafolio profesional de desarrollador web en formación.
 
 - Email: [josebossa03@gmail.com](mailto:josebossa03@gmail.com)
 - LinkedIn: [jose-bossa-34a650250](https://www.linkedin.com/in/jose-bossa-34a650250/)
-- Teléfono: 2657239836
