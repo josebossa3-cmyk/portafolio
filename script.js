@@ -153,30 +153,6 @@ animateElements.forEach((el) => {
   fadeObserver.observe(el)
 })
 
-const contactForm = document.getElementById("contactForm")
-if (contactForm) {
-  contactForm.addEventListener("submit", (e) => {
-    e.preventDefault()
-
-    // Obtener valores del formulario
-    const formData = {
-      name: document.getElementById("name").value,
-      email: document.getElementById("email").value,
-      subject: document.getElementById("subject").value,
-      message: document.getElementById("message").value,
-    }
-
-    // Aquí normalmente enviarías los datos a un servidor
-    console.log("Formulario enviado:", formData)
-
-    // Mostrar mensaje de éxito
-    alert("¡Gracias por tu mensaje! Me pondré en contacto contigo pronto.")
-
-    // Limpiar formulario
-    contactForm.reset()
-  })
-}
-
 // Smooth scroll para los enlaces de navegación
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
@@ -291,3 +267,28 @@ document.addEventListener("keydown", function (e) {
     }
   }
 })
+
+// Envío de formulario a WhatsApp
+const contactForm = document.getElementById("contactForm")
+if (contactForm) {
+  contactForm.addEventListener("submit", function (e) {
+    e.preventDefault()
+    
+    const name = document.getElementById("name").value
+    const subject = document.getElementById("subject").value
+    const message = document.getElementById("message").value
+    
+    // Construir el mensaje de WhatsApp
+    const whatsappMessage = `*Hola, soy ${name}*%0A%0A*Asunto:* ${subject}%0A%0A*Mensaje:*%0A${message}`
+    
+    // Número de WhatsApp (código de país + número sin espacios ni guiones)
+    const phoneNumber = "5492657239836"
+    
+    // Abrir WhatsApp
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`
+    window.open(whatsappUrl, "_blank")
+    
+    // Opcional: limpiar el formulario
+    contactForm.reset()
+  })
+}
