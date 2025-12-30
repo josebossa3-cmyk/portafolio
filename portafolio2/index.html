@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio - Desarrollador en Formación</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">{"Jose Bossa"}</a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Inicio</a></li>
+                <li><a href="#about" class="nav-link">Sobre Mí</a></li>
+                <li><a href="#projects" class="nav-link">Proyectos</a></li>
+                <li><a href="#skills" class="nav-link">Habilidades</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hola, soy <span class="gradient-text">Desarrollador Junior</span>
+                </h1>
+                <p class="hero-subtitle">
+                    <span id="typed-text"></span><span class="cursor">|</span>
+                </p>
+                <p class="hero-description">
+                    Estudiante de Desarrollo de Software con pasión por crear soluciones tecnológicas. 
+                    Buscando mi primera oportunidad profesional para aportar mi compromiso, 
+                    entusiasmo y ganas de aprender.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
+                    <a href="#contact" class="btn btn-secondary">Contáctame</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Mí -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Mí</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Soy un estudiante de Desarrollo de Software en constante aprendizaje, 
+                        apasionado por la tecnología y el mundo de la programación. Aunque estoy 
+                        al inicio de mi carrera profesional, me caracterizo por mi <strong>alto compromiso</strong>, 
+                        <strong>dedicación</strong> y <strong>ganas de crecer</strong> en esta industria.
+                    </p>
+                    <p>
+                        Estoy buscando mi primera oportunidad laboral donde pueda demostrar mi potencial, 
+                        compromiso y disposición para contribuir al éxito de la empresa.
+                    </p>
+                    <p>
+                        Cuento con proyectos académicos y personales que demuestran mis habilidades técnicas 
+                        y mi capacidad para llevar ideas a la realidad.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <h3 class="stat-number" data-target="500">0</h3>
+                        <p class="stat-label">Horas de Código</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 class="stat-number" data-target="3">0</h3>
+                        <p class="stat-label">Proyectos Completados</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 class="stat-number" data-target="100">0</h3>
+                        <p class="stat-label">% Compromiso</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Mis Proyectos</h2>
+            <p class="section-subtitle">Algunos de los proyectos en los que he trabajado durante mi aprendizaje</p>
+            <div class="projects-grid">
+                <div class="project-card" data-images='["img/Captura de pantalla 2025-12-29 230937.png" , "img/vista admin medias.png"]'>
+                    <div class="project-image">
+                        <img src="img/Captura de pantalla 2025-12-29 230937.png" alt="e-comerce">
+                        <div class="image-overlay">
+                            <span>👁️ Ver imágenes</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Pins and stocking 
+                            <br>
+                            e-comerce
+                        </h3>
+                        <p>pagina web para venta de productos, con vista adminsitrativo para subir , editar y manejar stock como agotado o disponible </p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://pinsandstocking.rf.gd/" target="_blank" rel="noopener noreferrer" class="project-link">Ver Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-images='["img/landingpage.png", "img/turnero vista cliente.png", "img/vista admin.png" ,"img/turnero vista admin.png" ]'>
+                    <div class="project-image">
+                        <img src="img/landingpage.png" alt="Barberia">
+                        <div class="image-overlay">
+                            <span>👁️ Ver imágenes</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Barberia</h3>
+                        <p>pagina web para una barberia con turnos automaticos
+                            con vista adminsitrativo y vista cliente 
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">php</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-images='["img/cinemacentro.png", "img/filtros.png", "img/infopelis.png", "img/trailer.png"]'>
+                    <div class="project-image">
+                        <img src="img/cinemacentro.png" alt="App del Clima">
+                        <div class="image-overlay">
+                            <span>👁️ Ver imágenes</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>proyecto Web De cine </h3>
+                        <p>proyecto para pagina web de peliculas funcional
+                            para ver trailers y informacion de peliculas 
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">html</span>
+                            <span class="tag">css</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://josebossa3-cmyk.github.io/Trabajo-Integrador-Programacion-web/" target="_blank" rel="noopener noreferrer" class="project-link">Ver Demo</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Habilidades Técnicas</h2>
+            <p class="section-subtitle">Tecnologías que manejo y en las que continúo aprendiendo</p>
+            <div class="tech-logos">
+                <div class="tech-logo">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                    <span>HTML5</span>
+                </div>
+                <div class="tech-logo">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                    <span>CSS3</span>
+                </div>
+                <div class="tech-logo">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                    <span>JavaScript</span>
+                </div>
+                <div class="tech-logo">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                    <span>Git</span>
+                </div>
+                <div class="tech-logo">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+                    <span>GitHub</span>
+                </div>
+                
+            </div>
+
+            <div class="soft-skills">
+                <h3 class="soft-skills-title">Habilidades Blandas</h3>
+                <div class="soft-skills-grid">
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">💼</div>
+                        <h4>Compromiso</h4>
+                        <p>Dedicación total en cada proyecto</p>
+                    </div>
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">🚀</div>
+                        <h4>Aprendizaje Continuo</h4>
+                        <p>Siempre buscando mejorar</p>
+                    </div>
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">🤝</div>
+                        <h4>Trabajo en Equipo</h4>
+                        <p>Colaborativo y comunicativo</p>
+                    </div>
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">🎯</div>
+                        <h4>Orientado a Resultados</h4>
+                        <p>Enfocado en cumplir objetivos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contáctame</h2>
+            <p class="section-subtitle">¿Tienes una oportunidad laboral o proyecto? ¡Me encantaría conversar!</p>
+            <div class="contact-content">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Tu Nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Tu Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Asunto" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Tu Mensaje" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </form>
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">📧</div>
+                        <h4>Email</h4>
+                        <p>jose.bossa.3@gmail.com</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">📱</div>
+                        <h4>Teléfono</h4>
+                        <p>2657239836</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">💼</div>
+                        <h4>LinkedIn</h4>
+                        <p><a href="https://www.linkedin.com/in/jose-bossa-34a650250/" target="_blank" rel="noopener noreferrer">jose-bossa-34a650250</a></p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">🐱</div>
+                        <h4>GitHub</h4>
+                        <p><a href="https://github.com/josebossa3-cmyk" target="_blank" rel="noopener noreferrer">josebossa</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Mi Portafolio.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <button class="lightbox-prev">❮</button>
+        <button class="lightbox-next">❯</button>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Imagen del proyecto">
+            <div class="lightbox-counter"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
