@@ -19,7 +19,7 @@ Portafolio profesional de desarrollador web en formación.
 - JavaScript
 - PHP
 - Git/GitHub
-
+- SQL
 ## 📞 Contacto
 
 - Email: [josebossa03@gmail.com](mailto:josebossa03@gmail.com)
